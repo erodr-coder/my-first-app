@@ -1,0 +1,11 @@
+<h1>{{ name }}</h1>
+<h2>{{ tagline }}</h2>
+<ul>
+  @for (skill of skills; track skill) {
+  <li>{{ skill }}</li>
+}</ul>
+<nav>
+  @for (link of links; track link) {
+    <a [href]="link.url">{{ link.name }}</a>
+  }
+</nav>
